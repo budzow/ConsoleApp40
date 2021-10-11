@@ -28,6 +28,11 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'ConsoleApp40'
     projectName: 'ConsoleApp40'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.verbose=true
 
 - task: VSBuild@1
   inputs:
