@@ -21,8 +21,10 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- task: SonarQubePrepare@4
+- task: SonarCloudPrepare@1
   inputs:
+    SonarCloud: 'sonarcloud'
+    organization: 'budzow-github'
     scannerMode: 'MSBuild'
     projectKey: 'ConsoleApp40'
     projectName: 'ConsoleApp40'
@@ -39,8 +41,8 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: SonarQubeAnalyze@4
+- task: SonarCloudAnalyze@1
 
-- task: SonarQubePublish@4
+- task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
