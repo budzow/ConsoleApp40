@@ -27,7 +27,9 @@ steps:
     organization: 'budzow-github'
     scannerMode: 'MSBuild'
     projectKey: 'ConsoleApp40'
-    projectName: 'ConsoleApp40'
+    projectName: 'ConsoleApp40'    
+    cliProjectKey: '''
+    cliSources: ''
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
       # Put one key=value per line, example:
