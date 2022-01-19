@@ -28,7 +28,7 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'ConsoleApp40'
     projectName: 'ConsoleApp40'    
-    cliProjectKey: '''
+    cliProjectKey: ''
     cliSources: ''
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
