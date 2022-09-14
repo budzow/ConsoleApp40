@@ -3,8 +3,7 @@
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
-workspace:
-  clean: all
+
 
 trigger:
 - master
@@ -17,6 +16,9 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
+workspace:
+  clean: all
+  
 steps:
 - task: NuGetToolInstaller@1
 
